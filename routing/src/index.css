@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+body{
+    overflow: hidden;
+}
+.header {
+    width: 100%;
+    background-color: rgb(255, 0, 85);
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+}
+
+.Nav {
+    width: 100%;
+    background-color: rgb(38, 38, 43);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    color: aliceblue;
+    height: calc(4rem);
+}
+
+form label{
+    display: none;
+}
+
+form input{
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    width: 20rem;
+    border: 2px solid #fff;
+}
+
+.Links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 12rem;
+    list-style: none;
+}
+
+ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 1rem;
+    transition: 0.5s;
+}
+
+ul li a:hover{
+    background: aliceblue;
+    color: black;
+}
+
+input:focus{
+    border: 2px solid rgb(0, 229, 255);
+}
+
+main{
+    width: 100%;
+    height: 78vh;
+    overflow: scroll;
+}
+
+.Home{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    overflow-x: hidden;
+}
+
+.post {
+    background: linear-gradient(to top right,rgb(181, 234, 228),rgb(170, 221, 241));
+    width: 100%;
+    border: 2px solid rgba(7, 116, 163, 0.21);
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction:column;
+    gap: 1rem;
+    position: relative;
+    /* width: calc(250px,100%, 100px); */
+    padding: 1rem;
+    height: 10rem;
+    color: rgb(4, 31, 167);
+}
+
+.post:hover {
+    background: rgb(125, 207, 243);
+}
+
+/* .post img{
+    width: 100%;
+    border-radius: 5px;
+} */
+
+.close {
+    font-weight: 600;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    background-color: rgb(109, 190, 252);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.postDate {
+    font-size: 0.7rem;
+}
+
+.NewPost{
+    background: rgb(13, 97, 128);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.NewPost .newPostForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%
+}
+.NewPost label{
+    color: #fff;
+    display: block;
+}
+
+.NewPost .newPostForm input, textarea{
+    width: 100%;
+}
+
+.NewPost button{
+    padding: 8px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    color: #042410;
+    background-color: rgb(6, 194, 132);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.NewPost button:hover{
+    background-color: rgb(4, 167, 112);
+}
+
+.newPostForm textarea{
+    resize: none;
+    height: 5rem;
+    padding: 5px;
+    border-radius: 5px;
+    outline: 0;
+    border: 0;
+}
+.NewPost h2 {
+    color: #fff;
+}
+
+.PostPage {
+    padding: 1rem;
+}
+
+.PostPage button {
+    width: 6rem;
+    padding: 5px;
+    background: rgb(255, 0, 85);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 0;
+}
+
+.btns {
+    display: flex;
+    gap: 8px;
+}
+
+.btns :first-child {
+    background: rgb(4, 167, 112);
+}
+
+.btns :first-child:hover {
+    background: rgb(6, 194, 132);
+}
+
+button:hover{
+    background: rgb(187, 5, 47);
+}
+
+footer{
+    background-color: rgb(212, 217, 217);
+    padding: 0.3rem;
+    color: #535353;
+    text-align: center;
+}
+
+
+.About {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+}
+
+.About .about-left{
+    width: 100%;
+}
+
+.About .about-left img{
+    width: 100%;
+}
+
+
